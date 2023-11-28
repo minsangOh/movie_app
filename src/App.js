@@ -32,11 +32,10 @@ function Food({ name, pict, rating })  // ({favorite}) 은 (props.favorite)의 �
 }
 
 Food.propTypes = {
-
+  name: PropTypes.string,
+  pict : PropTypes.string,
+  rating: PropTypes.number,
 }
-
-
-
 
 
 function App() {
@@ -53,5 +52,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
